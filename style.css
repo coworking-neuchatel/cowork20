@@ -1,0 +1,241 @@
+/*
+Theme Name: Cowork 2020
+Template: twentytwenty
+Author: ms-studio
+Description: Theme 2020 pour coworking neuchatel.
+Version: 1.0.0+build20200218
+License: GNU General Public License
+License URI: license.txt
+Text Domain: cowork2020
+Domain Path: /languages/
+Tags: gray, red, white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+(C) 2020 Manuel Schmalstieg
+
+*/
+
+
+/*
+* Typographie
+*/
+
+
+/* Icon Font ----------------------------- */
+
+@font-face {
+	font-family: 'cowork';
+	src:url('../fonts/icomoon-v4/cowork.eot?jtn6wy');
+	src:url('../fonts/icomoon-v4/cowork.eot?jtn6wy#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon-v4/cowork.woff?jtn6wy') format('woff'),
+		url('../fonts/icomoon-v4/cowork.ttf?jtn6wy') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* Font Families ----------------------------- */
+
+body,
+.entry-content,
+.entry-content p,
+.entry-content ol,
+.entry-content ul,
+.entry-content dl,
+.entry-content dt,
+.entry-content cite,
+.entry-content figcaption,
+.entry-content .wp-caption-text,
+.widget_text p,
+.widget_text ol,
+.widget_text ul,
+.widget_text dl,
+.widget_text dt,
+.widget-content .rssSummary,
+.widget-content cite,
+.widget-content figcaption,
+.widget-content .wp-caption-text {
+	font-family: 'Acumin Pro', 'acumin-pro', 'hk-super', Helvetica, Arial, sans-serif;
+}
+
+/*
+ * Jetpack Carousel font override:
+*/
+body div.jp-carousel-titleanddesc-title 
+{
+	font-family: 'Acumin Pro', 'acumin-pro', 'hk-super', Helvetica, Arial, sans-serif !important;
+}
+
+/*
+Grands titres plus fins
+*/
+
+h1, .heading-size-1 {
+	font-weight: 200;
+}
+
+/* élément	s masqués */
+
+
+.hidden {
+	display: none;
+}
+
+
+/* Icon Font ----------------------------- */
+
+.icomoon,
+[class^="icon-"],
+[class*=" icon-"] {
+	font-family: 'cowork';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-key:before {
+	content: "\e604";
+}
+.icon-home:before {
+	content: "\e605";
+}
+.icon-connection:before {
+	content: "\e600";
+}
+.icon-clock:before {
+	content: "\e606";
+}
+.icon-print:before {
+	content: "\e602";
+}
+.icon-key2:before {
+	content: "\e607";
+}
+.icon-cogs:before {
+	content: "\e608";
+}
+.icon-stats:before {
+	content: "\e609";
+}
+.icon-mug:before {
+	content: "\e60a";
+}
+.icon-food:before {
+	content: "\e603";
+}
+.icon-rocket:before {
+	content: "\e60b";
+}
+.icon-lightning:before {
+	content: "\e60c";
+}
+.icon-flag:before {
+	content: "\e60d";
+}
+.icon-smiley:before {
+	content: "\e60e";
+}
+.icon-cool:before {
+	content: "\e60f";
+}
+.icon-checkmark-circle:before {
+	content: "\e610";
+}
+.icon-uniE601:before {
+	content: "\e601";
+}
+.icon-history:before {
+	content: "\e611";
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-display:before {
+  content: "\e956";
+}
+.icon-hour-glass:before {
+  content: "\e979";
+}
+.icon-gift:before {
+  content: "\e99f";
+}
+.icon-glass:before {
+  content: "\e9a1";
+}
+.icon-sphere:before {
+  content: "\e9c9";
+}
+.icon-coffee:before {
+  content: "\e601";
+}
+
+
+/* Template: Login */
+
+/* -------------------------------------------------------------------------- */
+
+/*	7c. Template: Full Width
+/* -------------------------------------------------------------------------- */
+
+body.page-template-template-login .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
+body.page-template-template-login .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
+body.page-template-template-login [class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	max-width: 120rem;
+}
+
+
+
+
+body.page-template-template-login .entry-content .alignleft,
+body.page-template-template-login .entry-content .alignright {
+	position: static;
+}
+
+body.page-template-template-login .entry-content .alignleft,
+body.page-template-template-login [class*="wp-block"].alignwide [class*="__inner-container"] > .alignleft,
+body.page-template-template-login [class*="wp-block"].alignwide [class*="__inner-container"] > p .alignleft,
+body.page-template-template-login [class*="wp-block"].alignwide [class*="__inner-container"] > .wp-block-image .alignleft {
+
+	/*rtl:ignore*/
+	margin-left: 0;
+	position: static;
+}
+
+body.page-template-template-login .entry-content > .alignleft,
+body.page-template-template-login [class*="wp-block"].alignfull:not(.has-background) [class*="__inner-container"] > .alignleft,
+body.page-template-template-login [class*="wp-block"].alignfull:not(.has-background) [class*="__inner-container"] > p .alignleft,
+body.page-template-template-login [class*="wp-block"].alignfull:not(.has-background) [class*="__inner-container"] > .wp-block-image .alignleft {
+
+	/*rtl:ignore*/
+	margin-left: 2rem;
+	position: static;
+}
+
+body.page-template-template-login .entry-content .alignright,
+body.page-template-template-login [class*="wp-block"].alignwide [class*="__inner-container"] > .alignright,
+body.page-template-template-login [class*="wp-block"].alignwide [class*="__inner-container"] > p .alignright,
+body.page-template-template-login [class*="wp-block"].alignwide [class*="__inner-container"] > .wp-block-image .alignright {
+
+	/*rtl:ignore*/
+	margin-right: 0;
+	position: static;
+}
+
+body.page-template-template-login .entry-content > .alignright,
+body.page-template-template-login [class*="wp-block"].alignfull:not(.has-background) [class*="__inner-container"] > .alignright,
+body.page-template-template-login [class*="wp-block"].alignfull:not(.has-background) [class*="__inner-container"] > p .alignright,
+body.page-template-template-login [class*="wp-block"].alignfull:not(.has-background) [class*="__inner-container"] > .wp-block-image .alignright {
+
+	/*rtl:ignore*/
+	margin-right: 2rem;
+	position: static;
+}
+
