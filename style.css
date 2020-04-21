@@ -74,10 +74,22 @@ h1, .heading-size-1 {
 	font-weight: 200;
 }
 
-/* élément	s masqués */
+/* éléments masqués */
 
 
 .hidden {
+	display: none;
+}
+
+.members-only {
+	display: none;
+}
+
+body.logged-in .members-only {
+	display: block;
+}
+
+body.logged-in .members-hidden {
 	display: none;
 }
 
@@ -188,10 +200,8 @@ h1, .heading-size-1 {
 body.page-template-template-login .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
 body.page-template-template-login .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
 body.page-template-template-login [class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-	max-width: 120rem;
+	max-width: 80rem;
 }
-
-
 
 
 body.page-template-template-login .entry-content .alignleft,
