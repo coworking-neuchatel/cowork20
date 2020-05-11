@@ -1,0 +1,155 @@
+
+/* @group Fiches */
+
+/* Styles pour les fiches membres */
+
+.archive-membres {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+.fiche {
+	padding: 1em;
+	line-height: 1.5;
+}
+
+.grid-fiches {
+	margin-bottom: 1em;
+}
+
+/* Note: 
+ * pour la bordure du haut, 
+ * un override est nécessaire pour :
+ * .archive .hentry
+*/
+
+.home .fiche,
+.archive .fiche {
+	border: 1px solid #e74f4e;
+	border-color: var(--hot-color);
+	margin-bottom: 1em;
+}
+
+@media only screen 
+and (min-width : 1020px) {
+	.home .fiche,
+	.archive .fiche {
+		margin-bottom: 0;
+	}
+}
+
+.fiche .entry-title {
+	font-size: 1em;
+	color: var(--hot-color);
+	margin: 0;
+}
+
+.fiche p {
+	margin: 0;
+}
+
+.member-properties {
+	font-size: 0.8em;
+/*	margin-left: 1em;*/
+}
+
+.fiche .sub-title {
+	font-size: 0.8em;
+	margin: 0.5em 0 0.5em 0;
+}
+
+.fiche .email a {
+	color: #242424;
+}
+
+/* Photos des fiches */
+
+.fiche-photo {
+	padding: 0em 1em 0 0;
+}
+
+
+.fiche-photo img {
+	display: block;
+	width: 100px !important; /*hardcoded in markup*/
+	height: 100px !important; /*hardcoded in markup*/
+	max-width: none;
+	margin-bottom: 1em;
+}
+
+.mini-fiche .fiche-photo img {
+	margin-bottom: 0;
+}
+
+.fiche-portrait img {
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.fiche-logo img {
+	object-fit: contain;
+}
+
+/* Page des membres */
+
+.archive.post-type-archive-cwn_fiche .hentry {
+	padding-top: 1em;
+}
+
+/* Liste des compétences */
+
+.archive.tax-cwn_competence .entry-footer {
+	max-width: 40em;
+	margin-left: auto;
+	margin-right: auto;
+/*	text-align: center;*/
+}
+
+.voir-tous {
+	font-weight: normal;
+	font-size: 1.2em;
+	margin: 2em 0;
+}
+
+/* nécessaire de renforcer pour surcharger styles Goran */
+
+/* Layout */
+
+.fiche.has-photo {
+	display: flex;
+}
+
+@media only screen 
+and (min-width : 1020px) {
+	
+	/* Activer la mise en page Grille */
+	.grid-fiches {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1em;
+		row-gap: 1em;
+	}
+	
+}
+
+/* Frontpage Layout */
+
+@media only screen 
+and (min-width : 620px) {
+	
+	.home .grid-fiches {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1em;
+		row-gap: 1em;
+	}
+
+}
+
+@media only screen 
+and (min-width : 900px) {
+	.home .grid-fiches {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
