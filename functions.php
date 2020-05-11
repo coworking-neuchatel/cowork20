@@ -20,6 +20,19 @@ function my_theme_enqueue_styles() {
 
 }
 
+// La balise titre de la page d'accueil
+
+add_filter( 'pre_get_document_title', 'coworking_custom_title', 20 );
+function coworking_custom_title( $title ) {
+
+    if( is_front_page() ) {
+    
+    	$title = "Coworking Neuchâtel – Bureaux équipés | Salle de réunion | Réseau d'entrepreneurs" . $title;;
+    	return $title;
+    }
+
+}
+
 
 
 require_once('functions/typekit.php');
