@@ -58,18 +58,15 @@ if ( $show_fiche == true )  {
 			
 			// Photo perso = non-public
 			
-			if ( is_user_logged_in() ) {
+			if ($fiche_photo) {
 			
-				if ($fiche_photo) {
-				
-					echo '<div class="fiche-portrait">';
+				echo '<div class="fiche-portrait">';
+
+				echo wp_get_attachment_image( 
+					$fiche_photo, 
+					'medium' );
+				echo '</div>';
 	
-					echo wp_get_attachment_image( 
-						$fiche_photo, 
-						'medium' );
-					echo '</div>';
-		
-				}
 			}
 			
 			if ($fiche_logo) {
