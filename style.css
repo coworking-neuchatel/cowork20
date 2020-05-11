@@ -94,6 +94,11 @@ body.logged-in .members-hidden {
 }
 
 
+.primary-menu .sub-menu a {
+	color:  #ee0606;
+}
+
+
 /* Icon Font ----------------------------- */
 
 .icomoon,
@@ -248,4 +253,27 @@ body.page-template-template-login [class*="wp-block"].alignfull:not(.has-backgro
 	margin-right: 2rem;
 	position: static;
 }
+
+/*
+Correctifs Navigation
+*/
+
+@media (min-width: 1000px) {
+	.header-titles-wrapper {
+    max-width: 48rem;
+	}
+}
+
+/*
+* Sticky Header
+*/
+
+body.sticky-header #site-header.sticky-header-minified {
+	height: auto !important;
+}
+
+body.sticky-header #site-header.sticky-header-minified .custom-logo {
+    height: 60px !important;
+}
+
 
