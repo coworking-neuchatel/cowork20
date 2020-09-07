@@ -3,7 +3,7 @@ Theme Name: Cowork 2020
 Template: twentytwenty
 Author: ms-studio
 Description: Theme 2020 pour coworking neuchatel.
-Version: 1.0.0+build20200218
+Version: 1.0.1+build20200907b
 License: GNU General Public License
 License URI: license.txt
 Text Domain: cowork2020
@@ -81,11 +81,19 @@ h1, .heading-size-1 {
 	display: none;
 }
 
-.members-only {
+.members-only,
+.menu-wrapper .menu-item.members-only {
 	display: none;
 }
 
+
+/* Visible quand on est logged-in */
+
 body.logged-in .members-only {
+	display: block;
+}
+
+body.logged-in .menu-wrapper .menu-item.members-only {
 	display: block;
 }
 
