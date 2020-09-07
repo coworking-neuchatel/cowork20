@@ -146,16 +146,17 @@ if ( $show_fiche == true )  {
 			
 			}
 			
-			
-			if ( get_field('fiche_email') ) {
-				
-				$email = get_field('fiche_email');
-				
-				if (function_exists('ms_studio_protect_email')) {
-				   $email = ms_studio_protect_email( $email );
-				 }
-				 
-				echo '<div>' . $email . '</div>';
+			if ( is_user_logged_in() ) {
+				if ( get_field('fiche_email') ) {
+					
+					$email = get_field('fiche_email');
+					
+					if (function_exists('ms_studio_protect_email')) {
+					   $email = ms_studio_protect_email( $email );
+					 }
+					 
+					echo '<div>' . $email . '</div>';
+				}
 			}
 						
 			if ( is_user_logged_in() ) {
